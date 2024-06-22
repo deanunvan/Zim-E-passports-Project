@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #0a0b1f;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.logo img{
+    margin-top: 10px;
+}
+
+.logo h3{
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+nav ul{
+    margin-left: 300px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul i{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #0a0b1f;
+    text-decoration: none;
+    position: relative;
+    transition: background 1s;
+}
+
+.btn{
+    background: rgb(248, 224, 158);
+    border: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 1s, tranform 2s;
+    a{
+        text-decoration: none;
+        color: rgb(5, 5, 39);
+        font-weight: 600;
+        font-size: larger;
+    }
+}
+
+.btn:hover{
+    background: rgb(255, 214, 126);
+    transform: translateY(-5px);
+}
+
+.btn-1{
+    background: rgb(20, 23, 32);
+    border: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 1s, tranform 2s;
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: larger;
+    }
+}
+
+.btn-1:hover{
+    background: rgb(77, 77, 116);
+    transform: translateY(-5px);
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 20px;
+    background: rgba(20, 23, 32, 0.219);
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav .ri-close-fill{
+    display: none;
+}
+
+nav .ri-menu-line{
+    display: none;
+}
+
+/* --------------------doc1-home-section--------------- */
+
+#doc1-home{
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.doc1-home-items{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 140px;
+}
+
+.pop-doc-txt span{
+    color: #aaaaaa;
+}
+
+.zim-pass-head{
+    margin-top: 130px;
+    font-size: 55px;
+}
+
+.doc1-home-lorem{
+    margin-top: -30px;
+}
+
+.doc1-home-left button{
+    background: rgb(20, 23, 32);
+    border: none;
+    width: 190px;
+    height: 50px;
+    border-radius: 30px;
+    transition: background 1s, tranform 2s;
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        color: #fff; 
+    }
+}
+
+.doc1-home-left button:hover{
+    background: rgb(77, 77, 116);
+    transform: translateY(-5px);
+}
+
+.doc1-home-right{
+    width: 520px;
+    height: 500px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    margin-top: 30px;
+}
+
+.doc1-home-right div{
+    width: 230px;
+    height: 330px;
+    background-image: url(../Assets/Images/7.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    nav .ri-close-fill{
+        display: block;
+        font-size: 25px;
+    }
+    
+    nav .ri-menu-line{
+        display: block;
+        font-size: 25px;
+        margin-left: 200px;
+    }
+
+    nav ul{
+        background: rgb(173, 208, 255);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 160px;
+        height: 100vh;
+        padding-top: 100px;
+        z-index: 2;
+        transition: right 1s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+        margin-left: 0;
+    }
+
+    nav ul .ri-menu-line{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul .ri-close-fill{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .doc1-home-right{
+        display: none;
+    }
+
+    .doc1-home-lorem{
+        font-size: smaller;
+        margin-top: 30px;
+    }
+
+    .zim-pass-head{
+        font-size: 30px;
+    }
+
+}
+
+#photo-requirements{
+    width: 100%;
+    height: 130vh;
+    float: left;
+}
+
+.photo-requirements-items{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.photo-requirements-left div{
+    width: 550px;
+    height: 450px;
+    background-image: url(../Assets/Images/4.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 80px;
+    margin-top: 150px;
+}
+
+.photo-requirements-right-head span{
+    color: rgb(0, 133, 133);
+}
+
+.photo-requirements-right-head{
+    font-size: 50px;
+}
+
+.us-passport{
+
+    background: #ebebeb;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    /* display: flex;
+    flex-direction: row;
+    gap: 250px; */
+    margin-top: 30px;
+    transition: background 1s, tranform 2s;
+}
+
+.us-passport:hover{
+    background: #aaaaaa;
+}
+
+.ri-arrow-drop-down-line:hover{
+    transform: rotate(360deg);
+}
+
+.us-passport i{
+    font-size: 35px;
+}
+
+.us-passport-1 i{
+    font-size: 35px;
+}
+
+.us-passport-1{
+    background: #ebebeb;
+    height: 55px;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 30px;
+}
+
+.us-passport-1:hover{
+    background: #aaaaaa;
+}
+
+.us-passport div{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+.us-passport-1 div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.us-passport-head-1{
+    font-size: 15px;
+}
+
+/* .hover-dropdown{
+    display: none;
+    width: 500px;
+} */
+
+.hover-dropdown p{
+    display: none;
+}
+
+#frequency{
+    width: 100%;
+    height: 120vh;
+    float: left;
+}
+
+.frequency-items{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.frequency-left h1{
+    font-size: 50px;
+}
+
+.frequency-right img{
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#other-popular-documents{
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.other-popular-documents-div{
+    display: flex;
+    flex-direction: row;
+    gap: 530px;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.other-popular-documents-head{
+    font-size: 46px;
+    font-weight: 539;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.arrows{
+    margin-top: 35px;
+}
+
+.arrows i{
+    font-size: 70px;
+}
+
+.picture-2{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    float: left;
+    background: #151620;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.logo-footer img{
+    margin-top: 10px;
+}
+
+.zim-e{
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.cookies{
+    color: #fff;
+    font-size: smaller;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.div-txt{
+    color: #fff;
+    margin-top: 30px;
+    font-size: small;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #acacac5d;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon i{
+    margin-top: 6px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.social-txt{
+    color: #afafaf;
+    margin-top: 30px;
+}
+
+.git{
+    color: #fff;
+    font-size: 18px;
+}
+
+.git i{
+    color: #fff;
+    font-size: 18px;
+}
+
+.div{
+    width: 170px;
+    height: 170px;
+    background-image: url(../Assets/Images/9.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.social-txtz{
+    color: #afafaf;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .photo-requirements-items{
+        gap: 20px;
+    }
+
+    .photo-requirements-left div{
+        display: none;
+    }
+
+    .photo-requirements-right-head{
+        font-size: 30px;
+    }
+
+    .photo-requirements-right-lorem{
+        font-size: 12px;
+    }
+
+    .us-passport{
+        width: 400px;
+    }
+
+    .us-passport-head{
+        font-size: 10px
+    }
+
+    .us-passport-head-1{
+        font-size: 10px
+    }
+
+    .us-passport div{
+        gap: 180px;
+    }
+
+    .frequency-left h1{
+        font-size: 20px;
+        br{
+            display: none;
+        }
+    }
+
+    .other-popular-documents-div{
+        gap: 100px;
+    }
+
+    .other-popular-documents-head{
+        font-size: 20px;
+    }
+
+    .arrows i{
+        font-size: 40px;
+    }
+
+    .picture{
+        display: none;
+    }
+
+    .picture-2{
+        display: block;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        gap: -70px;
+        height: 400vh;
+    }
+
+    .footer-div{
+        margin-left: 130px;
+    }
+}
+
+#document-pass{
+    width: 100%;
+    height: 330vh;
+    float: left;
+}
+
+.doc img{
+    margin-top: 40px;
+    margin-left: 20px;
+}
